@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head id="test">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>OumFir movies</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style type="text/css"></style>
@@ -10,16 +11,37 @@
     }
     </style>
 </head>
-<body>
-    <h1>OumFir Cinema</h1>
+<body background="https://www.rollingstone.com/wp-content/uploads/2019/12/RS-BestMoviesDecade.jpg?w=1581&h=1054&crop=1"> 
+    
+    <h1>OumFir Movies</h1>
+    <p>Click the button below to randomly select a movie and try your luck to win with us!</p>
+    <button onclick="selectRandomMovie()">Select Movie</button>
+    <p id="selectedMovie"></p>
+    
+    <script>
+      var movies = ["Detective Knight", "Die Hart", "Imani", "Panther Swat", "Plane","Call of The Unseen","Jurassic Domination","Kantara","Skyscraper","The Greatest Beer Run Ever","A Man Called Otto","Johnny English Strikes Again","Maybe I Do","Sam And Kate","You People","Causeway","Saint Omer","The Skin I Live In","The Strays","Tonght You're Sleeping With Me","Evil Eye","Jije","Jikirag","Knock at the Cabin","Pengabdi Setan"]
+    
+      function selectRandomMovie() {
+        var randomIndex = Math.floor(Math.random() * movies.length)
+        var selectedMovie = movies[randomIndex]
+    
+        if (selectedMovie === "Skyscraper" || selectedMovie === "Die Hart" || selectedMovie === "Imani" || selectedMovie === "Plane" || selectedMovie === "The Strays") {
+          document.getElementById("selectedMovie").textContent = "Congratulations!!! You won a free subscription with us in the Lottery \"" + selectedMovie + "\"!"
+        } else {
+          document.getElementById("selectedMovie").textContent = "You should watch \"" + selectedMovie + "\"!"
+        }
+      }
+    </script>
+
+    
     <h3> Enjoy your Movie Night </h3>
 
     
 
   
     <div class = "Container">
-        <div class = "video"></div>
-        <div class = "image"></div>
+        <div class = "search"></div>
+        <div class = ""></div>
 
         <a href="style2.html">
             <button> Discover Movies</button>

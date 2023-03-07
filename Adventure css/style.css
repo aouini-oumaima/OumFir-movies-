@@ -1,0 +1,15 @@
+body {
+    background-image: url('https://media1.giphy.com/media/rCmC12OWz9kTS/giphy.gif');
+    background-size: cover;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  h2 {
+    color: white;
+    font-style: oblique;
+  }
+  p {
+    color: yellow;
+    font-style: oblique;
+  }
