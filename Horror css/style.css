@@ -1,0 +1,15 @@
+body {
+    background-image: url('https://www.icegif.com/wp-content/uploads/2021/10/icegif-78.gif');
+    background-size: cover;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  h2 {
+    color: white;
+    font-style: oblique;
+  }
+  p {
+    color: yellow;
+    font-style: oblique;
+  }

@@ -1,27 +1,14 @@
-h2 {
-    color: white;
-    font-style: oblique;
-  }
+
   p {
     color: yellow;
     font-style: oblique;
   }
 
-  h2 {
-    color: white;
-    font-style: oblique;
-  }
-  p {
-    color: yellow;
-    font-style: oblique;
-  }
   body {
     position:calc();
     background-image: url('https://www.psdgraphics.com/file/red-stage.jpg');
-    background-attachment: fixed;
     background-size: calc();
-    background-position: center;
-    background-size: contain;
+    background-position: center;background-size: contain;
     text-align: center;
   }
   
@@ -30,18 +17,18 @@ h2 {
     font-style: oblique;
   }
   p {
-    color: red;
+    color: yellow;
     font-style: oblique;
   }
 button{
     background-color: black; 
     border: none;
     color: white;
-    padding: 30px 30px;
+    padding: 40px 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
+    font-size: 16px;
     position: relative;
     
 }
@@ -51,8 +38,5 @@ vertical-canter {
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);}
-#sa{
-  color: red;
-
+    transform: translateY(-50%);
 }
